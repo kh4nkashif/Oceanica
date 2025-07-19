@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(20px);
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .navbtn {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbtn:hover {
+    color: gray;
+  }
+  
+  .cta {
+    color: #2085dd;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  #topcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px 0 100px;
+    background-image: url(./images/Frame\ 5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    gap: 80px;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+  }
+  
+  .topcontleft {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .topcontleft h1 {
+    margin-top: 0;
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1.2;
+  }
+  
+  .topcontright {
+    flex: 1;
+    font-size: 16px;
+    line-height: 2.1;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    min-width: 280px;
+  }
+  
+  .topcontright h2 {
+    font-weight: lighter;
+    padding-bottom: 5px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-image: url(./images/historic\ destinations.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .box {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin: 50px;
+    min-width: 280px;
+  }
+  
+  .tree {
+    opacity: 0.6;
+  }
+  
+  .container h2 {
+    font-weight: lighter;
+  }
+  
+  .Testimonies h1 {
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .container1 h2 {
+    font-weight: lighter;
+  }
+  
+  .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-image: url(./images/historic\ destinations.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .box1 {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    margin: 50px;
+    background-color: rgba(200, 200, 200, 0.1);
+    backdrop-filter: blur(10px);
+    min-width: 280px;
+  }
+  
+  .people {
+    border-radius: 50%;
+    width: 150px;
+  }
+  
+  #contact {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .left-contact {
+    flex: 1;
+    padding-bottom: 20px;
+    min-width: 280px;
+  }
+  
+  .right-contact {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    min-width: 280px;
+  }
+  
+  .contactme {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 2.5;
+    flex-wrap: wrap;
+  }
+  
+  .contactme h4 {
+    font-weight: lighter;
+    margin-right: 30px;
+  }
+  
+  .about, .pack, .legal {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  #contact h1 {
+    font-weight: 600;
+  }
+  
+  .last {
+    padding: 15px;
+  }
+  
+  .bottomlinks {
+    transition: 0.3s ease;
+  }
+  
+  .bottomlinks:link,
+  .bottomlinks:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .bottomlinks:hover {
+    color: gray;
+    transition: all ease 0.5s;
+  }
+  
+  .signup-form {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: fit-content;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .signup-form .email {
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 10px 5px;
+    font-size: 16px;
+    outline: none;
+    width: 250px;
+  }
+  
+  .signup-form .email::placeholder {
+    color: white;
+    opacity: 0.7;
+  }
+  
+  .signup-form .signup {
+    background-color: black;
+    color: white;
+    border: 0.5px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-form .signup:hover {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .bottomcontainer {
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .smicon {
+    width: 60px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .smicon:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+  
+  .lastpara {
+    color: #256D85;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+  
+    #topcontainer {
+      flex-direction: column;
+      padding: 220px 20px 20px;
+      height: auto;
+    }
+  
+    .container,
+    .container1 {
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .box,
+    .box1 {
+      margin: 0;
+    }
+  
+    #contact {
+      flex-direction: column;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .contactme {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .signup-form {
+      flex-direction: column;
+      width: 100%;
+      gap: 15px;
+    }
+  
+    .signup-form .email {
+      width: 90%;
+    }
+  
+    .signup-form .signup {
+      width: 50%;
+    }
+  }
+  
